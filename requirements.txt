@@ -3,5 +3,4 @@ flask-material
 MetaMindApi
 ipython
 simplejson
-stop-words
-csv
+
