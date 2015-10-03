@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 USER root
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
-
+RUN echo "DOCKER_OPTS=' -G jenkins'" >> /etc/default/docker
 USER jenkins
 
 RUN sudo apt-get update
