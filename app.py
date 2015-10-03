@@ -34,7 +34,7 @@ def index():
   posts = []
   x=0
   #get the top 10 stories on HN, push into a dict with name and score
-  for story_id in hn.top_stories(limit=10):
+  for story_id in hn.top_stories(limit=50):
     story = hn.get_item(story_id)
     stories[x] = {}
     stories[x]['name'] = [story.title]
