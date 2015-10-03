@@ -2,3 +2,4 @@ haxor
 flask-material
 MetaMindApi
 ipython
+simplejson
