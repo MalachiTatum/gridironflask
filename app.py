@@ -2,8 +2,8 @@ from flask import Flask, render_template, session, redirect, url_for, flash, req
 from hackernews import HackerNews
 from flask_material import Material
 from IPython import embed
-#from metamind.api import ClassificationModel, set_api_key
 
+#from metamind.api import ClassificationModel, set_api_key
 
   
 app = Flask(__name__)
@@ -13,10 +13,7 @@ hn = HackerNews()
 
 #set_api_key("39W42KN7ZKFYcWewQLewjxIWd8wfsICtcbyD8SxQZC42gEvGmA")
 
-
-
 @app.route('/')
-@app.route('/index') 
 def index():  
   
   #recursive method to remove Unicode bullshit
@@ -46,13 +43,14 @@ def index():
   #refine the story dict
   for x in stories:
     posts.append(stories[x])
+    
       
   #MetaMind call
 #  sentiment = byteify(ClassificationModel(id=155).predict("hackathon", input_type="text"))
 
   #render index.html template and passes posts dict
-  return render_template('index.html', posts=posts)
-                           
+  return render_template('index.html', posts=posts[:10])
+  
 
 def hello_world():
     return 'Hello Jenkins!'
