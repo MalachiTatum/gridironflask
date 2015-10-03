@@ -1,3 +1,4 @@
 haxor
 flask-material
+MetaMindApi
 ipython

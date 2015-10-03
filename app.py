@@ -1,9 +1,6 @@
 from flask import Flask, render_template, session, redirect, url_for, flash, request, abort, send_file 
 from hackernews import HackerNews
 from flask_material import Material
-from flask.ext.wtf import Form
-from wtforms import TextField, HiddenField, ValidationError, RadioField,\
-    BooleanField, SubmitField, IntegerField, FormField, SelectField, StringField, RadioField,  validators
 from metamind.api import ClassificationModel, set_api_key
 from IPython import embed
 
