@@ -1,2 +1,2 @@
-sudo docker build -t postgres db
-sudo docker build -t flask .
+docker build -t postgres db
+docker build -t flask .
