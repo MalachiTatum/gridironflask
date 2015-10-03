@@ -11,7 +11,7 @@ Material(app)
 
 hn = HackerNews()
 
-set_api_key("39W42KN7ZKFYcWewQLewjxIWd8wfsICtcbyD8SxQZC42gEvGmA")
+#set_api_key("39W42KN7ZKFYcWewQLewjxIWd8wfsICtcbyD8SxQZC42gEvGmA")
 
 
 
