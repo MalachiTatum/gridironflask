@@ -31,7 +31,11 @@ def index():
   posts = []
   x=0
   #get the top 10 stories on HN, push into a dict with name and score
-  for story_id in hn.top_stories(limit=25):
+<<<<<<< HEAD
+  for story_id in hn.top_stories(limit=10):
+=======
+  for story_id in hn.top_stories(limit=5):
+>>>>>>> 3d48c9414afb4ae0bb5a1c4c55c03aa3f919a9b1
     story = hn.get_item(story_id)
     stories[x] = {}
     stories[x]['name'] = [story.title]
@@ -51,7 +55,7 @@ def index():
 #  sentiment = byteify(ClassificationModel(id=155).predict("hackathon", input_type="text"))
 
   #render index.html template and passes posts dict
-  return render_template('index.html', posts=posts[:20])
+  return render_template('index.html', posts=posts[:10])
   
 
 def hello_world():
