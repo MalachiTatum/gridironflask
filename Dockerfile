@@ -1,8 +1,8 @@
 FROM ubuntu:14.04
 
 USER root
-ADD /sudoers.txt /etc/sudoers
-RUN chmod 440 /etc/sudoers
+RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
+
 USER jenkins
 
 RUN sudo apt-get update
