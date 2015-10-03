@@ -61,6 +61,7 @@ def index():
       w = csv.DictWriter(f, key_words.keys())
       w.writeheader()
       w.writerow(key_words)
+      w.close()
       
   #MetaMind call
 #  sentiment = byteify(ClassificationModel(id=155).predict("hackathon", input_type="text"))
