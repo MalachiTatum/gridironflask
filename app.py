@@ -19,6 +19,7 @@ set_api_key("39W42KN7ZKFYcWewQLewjxIWd8wfsICtcbyD8SxQZC42gEvGmA")
 
 
 @app.route('/')
+<<<<<<< HEAD
 @app.route('/index') 
 def index():  
   
@@ -56,5 +57,9 @@ def index():
   return render_template('index.html', title='HN Feeder', posts=posts, user='Salil')
                            
 
+def hello_world():
+    return 'Hello Jenkins!'
+
+
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
